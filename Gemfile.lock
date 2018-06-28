@@ -1,3 +1,20 @@
+GIT
+  remote: https://github.com/sferik/twitter
+  revision: 844818cad07ce490ccb9d8542ebb6b4fc7a61cb4
+  branch: master
+  specs:
+    twitter (6.2.0)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      equalizer (~> 0.0.11)
+      http (~> 3.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+      memoizable (~> 0.4.0)
+      multipart-post (~> 2.0)
+      naught (~> 1.0)
+      simple_oauth (~> 0.3.0)
+
 PATH
   remote: .
   specs:
@@ -6,9 +23,30 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    buftok (0.2.0)
     diff-lcs (1.3)
     docile (1.3.1)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.5.0)
+    equalizer (0.0.11)
+    http (3.3.0)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.1.1)
+    http_parser.rb (0.6.0)
     json (2.1.0)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    multipart-post (2.0.0)
+    naught (1.1.0)
+    public_suffix (3.0.2)
     rake (10.5.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
@@ -23,20 +61,27 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
+    simple_oauth (0.3.1)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    thread_safe (0.3.6)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bundler (~> 1.16)
+  dotenv
   rake (~> 10.0)
   rspec (~> 3.0)
   simplecov
+  twitter!
   twitter_streaming!
 
 BUNDLED WITH

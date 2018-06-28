@@ -1,8 +1,6 @@
 # TwitterStreaming
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/twitter_streaming`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Get sample tweets from the Twitter Streaming API, use the sample endpoint
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+stream = TwitterStreaming::Stream.new
+stream.get_sample
+=> "Finished getting tweets!"
+stream.word_count
+=> 64644
+stream.most_frequent_words
+=> [["rt", 2619], ["im", 238], ["like", 200], ["dont", 169], ["people", 157], ["one", 150], ["get", 136], ["amp", 129], ["love", 126], ["know", 114]]
+```
 
 ## Development
 
@@ -32,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/twitter_streaming.
+Bug reports and pull requests are welcome on GitHub at https://github.com/marclerodrigues/twitter_streaming.
 
 ## License
 
