@@ -19,6 +19,15 @@ Or install it yourself as:
     $ gem install twitter_streaming
 
 ## Usage
+It's very important to remember to add these variables to your environment:
+```ruby
+TWITTER_CONSUMER_KEY=sample
+TWITTER_CONSUMER_SECRET=sample
+TWITTER_ACCESS_TOKEN=sample
+TWITTER_ACCESS_SECRET=sample
+```
+
+After adding them you can start using:
 
 ```ruby
 stream = TwitterStreaming::Stream.new
